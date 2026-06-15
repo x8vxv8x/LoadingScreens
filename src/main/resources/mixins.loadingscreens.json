@@ -1,11 +1,17 @@
 {
-	"package": "",
+	"package": "com.smd.loadingscreens.mixin",
 	"required": true,
 	"refmap": "mixins.loadingscreens.refmap.json",
-	"target": "@env(DEFAULT)",
+	"target": "@env(CLIENT)",
 	"minVersion": "0.8.5",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [],
 	"server": [],
-	"client": []
+	"client": [
+		"client.MixinLoadingScreenRenderer",
+		"client.MixinGuiScreenWorking",
+		"client.MixinGuiDownloadTerrain",
+		"client.MixinGuiConnecting",
+		"client.MixinGuiDisconnected"
+	]
 }
